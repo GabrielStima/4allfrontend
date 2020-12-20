@@ -25,7 +25,7 @@ function Header() {
             <FiShoppingBag size="1.2em"/>
           </Styled.HeaderIcon>
           <Styled.HeaderIcon divider>
-            <FiUser size="1.2em" style={{marginLeft: '5px'}}/>
+            <FiUser size="1.2em"/>
           </Styled.HeaderIcon>
         </Styled.HeaderIcons>
       </Styled.HeaderSubContainer>

@@ -18,5 +18,17 @@ export const Styled = {
         justify-content: space-between;
         width: 97%;
         box-sizing: border-box;
+    `,
+    SectionTitleContainer:styled.div`
+        display: flex;
+        justify-content: space-between;
+        width: 97%;
+    `,
+    SectionGoSection: styled.div`
+        margin: 0;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
     `
 }
