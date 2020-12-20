@@ -57,10 +57,11 @@ export const Styled = {
         display:flex;
         align-items: center;
         justify-content: center;
-        border-radius: 10%;
         margin: auto 10px;
         cursor: pointer;
+        border-left: ${props => props.divider ? '1px solid #ffffff' : 'none'};
         &:hover{
+            border-radius: 10%;
             color: #173957;
             background-color: #ffffff;
         }

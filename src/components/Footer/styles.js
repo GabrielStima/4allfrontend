@@ -4,6 +4,7 @@ export const Styled = {
     FooterContainer: styled.div`
         width: 100vw;
         height: 250px;
+        margin-top: 50px;
     `,
     FooterContainerInfo: styled.div`
         box-sizing: border-box;
