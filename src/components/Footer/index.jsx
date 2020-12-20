@@ -7,7 +7,9 @@ function Footer() {
       <Styled.FooterContainer>
         <Styled.FooterContainerInfo>
           <Styled.FooterContainerInfoItems>
-            <img src={logo} alt="Logo"/>
+            <div>
+              <img src={logo} alt="Logo"/>
+            </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec dui vel orci condimentum pretium. Curabitur sodales hendrerit velit.</p>
           </Styled.FooterContainerInfoItems>
           <Styled.FooterContainerInfoItems>

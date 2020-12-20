@@ -11,8 +11,8 @@ function Header() {
       </Styled.HeaderSubContainer>
       <Styled.HeaderSubContainer gridColumn={2} justifyContent="center">
         <Styled.HeaderMenu>
-          {menu.map((item) => (
-            <Styled.HeaderMenuItem>{item.title}</Styled.HeaderMenuItem>
+          {menu.map((item, index) => (
+            <Styled.HeaderMenuItem key={index}>{item.title}</Styled.HeaderMenuItem>
           ))}
         </Styled.HeaderMenu>
       </Styled.HeaderSubContainer>

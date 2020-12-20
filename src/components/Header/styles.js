@@ -7,7 +7,7 @@ export const Styled = {
         height: 60px;
         background-color: #173957;
         display: grid;
-        grid-template-columns: 7% 84% 7%;
+        grid-template-columns: 7% 84% 9%;
     `,
     HeaderSubContainer: styled.div`
         width: 100%;
@@ -29,16 +29,22 @@ export const Styled = {
     HeaderMenu: styled.ul`
         width: 100%;
         list-style: none;
+        margin: 0;
+        padding: 0;
         display: flex;
         justify-content: center;
-        aling-items: center;
+        align-items: center;
     `,
     HeaderMenuItem: styled.li`
+        box-sizing: border-box;
         margin: 0 20px;
         cursor: pointer;
+        padding: 10px;
         color: #FFFFFF;
         &:hover{
-            text-decoration: underline;
+            color: #173957;
+            background-color: #ffffff;
+            border-radius: 10px;
         }
     `,
     HeaderIcons: styled.div`
@@ -46,7 +52,17 @@ export const Styled = {
     `,
     HeaderIcon: styled.div`
         color: #FFFFFF;
-        margin: auto 15px;
+        width: 2.2em;
+        height: 2.2em;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: auto 10px;
         cursor: pointer;
+        &:hover{
+            color: #173957;
+            background-color: #ffffff;
+        }
     `,
 }

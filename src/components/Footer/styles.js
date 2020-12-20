@@ -3,15 +3,16 @@ import styled from "styled-components";
 export const Styled = {
     FooterContainer: styled.div`
         width: 100vw;
-        height: 200px;
+        height: 250px;
     `,
     FooterContainerInfo: styled.div`
-        width: 80%;
-        padding: 10px 10% 10px 10%;
-        height: 80%;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 0;
+        height: 85%;
         background-color: #173957;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         color: #ffffff;
         font-weight: 300;
@@ -19,10 +20,13 @@ export const Styled = {
     FooterContainerInfoItems: styled.div`
         width: 400px;
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     `,
     FooterContainerCopy: styled.div`
         width: 100vw;
-        height: 20%;
+        height: 15%;
         display: flex;
         font-size: .8em;
         justify-content: center;
