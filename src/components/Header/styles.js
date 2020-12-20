@@ -44,7 +44,7 @@ export const Styled = {
         &:hover{
             color: #173957;
             background-color: #ffffff;
-            border-radius: 10px;
+            border-radius: 5px;
         }
     `,
     HeaderIcons: styled.div`
@@ -57,7 +57,7 @@ export const Styled = {
         display:flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
+        border-radius: 10%;
         margin: auto 10px;
         cursor: pointer;
         &:hover{
