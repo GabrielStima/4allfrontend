@@ -34,6 +34,9 @@ export const Styled = {
         display: flex;
         justify-content: center;
         align-items: center;
+        a{
+            text-decoration: none;
+        }
     `,
     HeaderMenuItem: styled.li`
         box-sizing: border-box;

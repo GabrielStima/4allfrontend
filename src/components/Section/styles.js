@@ -30,5 +30,8 @@ export const Styled = {
         display: flex;
         align-items: center;
         cursor: pointer;
+        a{
+            text-decoration: none;
+        }
     `
 }

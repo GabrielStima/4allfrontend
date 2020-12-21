@@ -2,26 +2,26 @@ export const menu = [
     {
         "id": 1,
         "title": "Masculino",
-        "url": "",
+        "url": "/ListProducts/5",
     },
     {
         "id": 2,
         "title": "Feminino",
-        "url": "",
+        "url": "/ListProducts/5",
     },
     {
         "id": 3,
         "title": "Infantil",
-        "url": "",
+        "url": "/ListProducts/5",
     },
     {
         "id": 4,
         "title": "Destaques",
-        "url": "",
+        "url": "/ListProducts/5",
     },
     {
-        "id": 5,
+        "id": 1,
         "title": "Ofertas",
-        "url": "",
+        "url": "/ListProducts/5",
     },
 ]
