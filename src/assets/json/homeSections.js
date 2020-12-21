@@ -10,6 +10,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -18,6 +19,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -26,6 +28,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -34,6 +37,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -42,6 +46,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
         ],
@@ -56,6 +61,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "20.00",
                 "price":"10.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -64,6 +70,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -72,6 +79,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"10.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -80,6 +88,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "30.00",
                 "price":"20.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -88,6 +97,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"30.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
         ],
@@ -102,6 +112,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "10.00",
                 "price":"5.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -110,6 +121,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -118,6 +130,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "50.00",
                 "price":"30.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -126,6 +139,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "55.00",
                 "price":"25.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
@@ -134,6 +148,7 @@ export const homeSections = [
                 "name":"Lorem Ipsum",
                 "oldPrice": "16.00",
                 "price":"11.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
         ],

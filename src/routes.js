@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Container from "./components/Container";
 import Home from "./views/Home";
 import ListProducts from "./views/ListProducts";
+import ProductDetail from "./views/ProductDetail";
 
 const Routes = () => (
   <BrowserRouter>
@@ -13,9 +14,12 @@ const Routes = () => (
         render={(props) => <Container {...props} component={Home} />}
       />
       <Route
-        exact
-        path="/ListProducts/:id"
+        path="/ListProducts/:id/:page?"
         render={(props) => <Container {...props} component={ListProducts} />}
+      />
+      <Route
+        path="/ProductDetail/:id"
+        render={(props) => <Container {...props} component={ProductDetail} />}
       />
     </Switch>
   </BrowserRouter>

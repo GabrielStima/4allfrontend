@@ -7,6 +7,10 @@ export const Styled = {
         width: 320px;
         box-sizing: border-box;
         cursor: pointer;
+        a{
+            color: initial;
+            text-decoration: none;
+        }
     `,
     SectionItemImg:styled.div`
         height: 400px;
@@ -15,18 +19,19 @@ export const Styled = {
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 8px;
+        box-shadow: 1px 2px 8px #989898;
     `,
     SectionItemInfoContainer:styled.div`
         border-radius: 0 0 8px 8px;
         box-sizing: border-box;
         position: relative;
-        top: -94px;
+        top: -96px;
         width: 100%;
-        height: 95px;
+        height: 96px;
         padding: 12px;
         background-color: rgba(255,255,255, .8);
         .container:hover & {
-            background-color: rgba(0,0,0, .6);
+            background-color: rgba(152,152,152, .9);
             color: #ffffff;
         }
     `,

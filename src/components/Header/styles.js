@@ -40,7 +40,7 @@ export const Styled = {
     `,
     HeaderMenuItem: styled.li`
         box-sizing: border-box;
-        margin: 0 20px;
+        margin: 0 2.5px;
         cursor: pointer;
         padding: 10px;
         color: #FFFFFF;

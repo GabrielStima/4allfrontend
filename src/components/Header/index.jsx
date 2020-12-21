@@ -2,18 +2,20 @@ import React from "react";
 import { Styled } from "./styles";
 import { menu } from "../../assets/json/menu";
 import { FiUser, FiSearch, FiShoppingBag } from "react-icons/fi";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 function Header() {
   return (
     <Styled.HeaderContainer>
       <Styled.HeaderSubContainer gridColumn={1}>
-        <Styled.HeaderLogo />
+        <Link to="/">
+          <Styled.HeaderLogo />
+        </Link>
       </Styled.HeaderSubContainer>
       <Styled.HeaderSubContainer gridColumn={2} justifyContent="center">
         <Styled.HeaderMenu>
           {menu.map((item, index) => (
-            <Link to={item.url}>
-              <Styled.HeaderMenuItem key={index}>{item.title}</Styled.HeaderMenuItem>
+            <Link to={item.url} key={index}>
+              <Styled.HeaderMenuItem>{item.title}</Styled.HeaderMenuItem>
             </Link>
           ))}
         </Styled.HeaderMenu>

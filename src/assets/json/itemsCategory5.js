@@ -6,98 +6,245 @@ export const itemsCategory5 = {
         items:[
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 1,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 1,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 1,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 1,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 1,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 1,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 2,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 2,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 3,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 4,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 4,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
             {
                 "id": 1,
-                "idCategory": 6,
+                "idCategory": 4,
                 "name":"Lorem Ipsum",
                 "oldPrice": "",
                 "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 5,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 5,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 5,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 1,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 1,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 1,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 2,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 2,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 3,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 4,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 4,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 4,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 5,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 5,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
+                "image":item
+            },
+            {
+                "id": 1,
+                "idCategory": 5,
+                "name":"Lorem Ipsum",
+                "oldPrice": "",
+                "price":"00.00",
+                "url": "/ProductDetail/1",
                 "image":item
             },
         ]

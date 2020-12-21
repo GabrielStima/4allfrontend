@@ -32,6 +32,7 @@ export const Styled = {
         cursor: pointer;
         a{
             text-decoration: none;
+            color: initial;
         }
     `
 }
