@@ -4,6 +4,7 @@ import Container from "./components/Container";
 import Home from "./views/Home";
 import ListProducts from "./views/ListProducts";
 import ProductDetail from "./views/ProductDetail";
+import Bag from "./views/Bag";
 
 const Routes = () => (
   <BrowserRouter>
@@ -20,6 +21,10 @@ const Routes = () => (
       <Route
         path="/ProductDetail/:id"
         render={(props) => <Container {...props} component={ProductDetail} />}
+      />
+      <Route
+        path="/bag"
+        render={(props) => <Container {...props} component={Bag} />}
       />
     </Switch>
   </BrowserRouter>

@@ -67,5 +67,9 @@ export const Styled = {
             color: #173957;
             background-color: #ffffff;
         }
+        a{
+            color: #ffffff;
+            text-decoration: none;
+        }
     `,
 }

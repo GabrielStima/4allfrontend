@@ -25,9 +25,11 @@ function Header() {
           <Styled.HeaderIcon>
             <FiSearch size="1.2em"/>
           </Styled.HeaderIcon>
-          <Styled.HeaderIcon>
-            <FiShoppingBag size="1.2em"/>
-          </Styled.HeaderIcon>
+          <Link to="/bag">
+            <Styled.HeaderIcon>
+              <FiShoppingBag size="1.2em"/>
+            </Styled.HeaderIcon>
+          </Link>
           <Styled.HeaderIcon divider>
             <FiUser size="1.2em"/>
           </Styled.HeaderIcon>

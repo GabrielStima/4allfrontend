@@ -4,7 +4,7 @@ export const Styled = {
     FooterContainer: styled.div`
         width: 100vw;
         height: 30%;
-        margin-top: 50px;
+        margin-top: 6rem;
     `,
     FooterContainerInfo: styled.div`
         box-sizing: border-box;
@@ -35,6 +35,7 @@ export const Styled = {
         align-items: center;
         color: #ffffff;
         font-weight: 300;
+        padding: .5rem 0;
     `,
     FooterContainerInfoTitle: styled.p`
         font-size: 1.1em;

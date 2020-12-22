@@ -15,19 +15,35 @@ function Footer() {
           <Styled.FooterContainerInfoItems>
             <Styled.FooterContainerInfoTitle>Sobre a Fashion Store</Styled.FooterContainerInfoTitle>
             <Styled.FooterContainerInfoList>
-              <Styled.FooterContainerInfoListItem>Pessoas</Styled.FooterContainerInfoListItem>
-              <Styled.FooterContainerInfoListItem>Produtos</Styled.FooterContainerInfoListItem>
-              <Styled.FooterContainerInfoListItem>Carreira</Styled.FooterContainerInfoListItem>
-              <Styled.FooterContainerInfoListItem>Proteção da marca</Styled.FooterContainerInfoListItem>
+              <Styled.FooterContainerInfoListItem>
+                <p>Pessoas</p>
+              </Styled.FooterContainerInfoListItem>
+              <Styled.FooterContainerInfoListItem>
+                <p>Produtos</p>
+              </Styled.FooterContainerInfoListItem>
+              <Styled.FooterContainerInfoListItem>
+                <p>Carreira</p>
+              </Styled.FooterContainerInfoListItem>
+              <Styled.FooterContainerInfoListItem>
+                <p>Proteção da marca</p>
+              </Styled.FooterContainerInfoListItem>
             </Styled.FooterContainerInfoList>
           </Styled.FooterContainerInfoItems>
           <Styled.FooterContainerInfoItems>
           <Styled.FooterContainerInfoTitle>Loja</Styled.FooterContainerInfoTitle>
           <Styled.FooterContainerInfoList>
-            <Styled.FooterContainerInfoListItem>Coleção Homens</Styled.FooterContainerInfoListItem>
-            <Styled.FooterContainerInfoListItem>Coleção Mulheres</Styled.FooterContainerInfoListItem>
-            <Styled.FooterContainerInfoListItem>Coleção Crianças</Styled.FooterContainerInfoListItem>
-            <Styled.FooterContainerInfoListItem>Loja de Calçados</Styled.FooterContainerInfoListItem>
+            <Styled.FooterContainerInfoListItem>
+              <p>Coleção Homens</p>
+            </Styled.FooterContainerInfoListItem>
+            <Styled.FooterContainerInfoListItem>
+              <p>Coleção Mulheres</p>
+            </Styled.FooterContainerInfoListItem>
+            <Styled.FooterContainerInfoListItem>
+              <p>Coleção Crianças</p>
+            </Styled.FooterContainerInfoListItem>
+            <Styled.FooterContainerInfoListItem>
+              <p>Loja de Calçados</p>
+            </Styled.FooterContainerInfoListItem>
           </Styled.FooterContainerInfoList>
         </Styled.FooterContainerInfoItems>
         </Styled.FooterContainerInfo>

@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Styled } from './styles';
 import Carousel from '../../components/Carousel';
 import Section from '../../components/Section';
-import {homeSections} from '../../assets/json/homeSections';
+import { getHomeSections } from '../../services/homeSections';
+
 function Home() {
+  const [homeSections, setHomeSections] = useState([]);
+  
+  useEffect(()=>{
+    setHomeSections(getHomeSections());
+  },[]);
+
   return (
       <Styled.HomeContainer>
         <Carousel/>
