@@ -1,8 +1,11 @@
 import { products } from '../assets/json/products';
 
 export const getProductById = (id) => {
-    const result = products.filter(element => element.id === Number(id));
-    return result.shift();
+    const result = {};
+    result.item = products.filter(element => element.id === Number(id));
+    result.item = result.item.shift();
+    result.relatedProducts = getRelatedProducts(result.item.idCategory).shift();
+    return result;
 }
 
 export const getRelatedProducts = (idCategory) => {

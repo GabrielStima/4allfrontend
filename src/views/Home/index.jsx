@@ -1,21 +1,25 @@
-import React, {useState, useEffect} from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchSections } from '../../redux'
+
 import { Styled } from './styles';
 import Carousel from '../../components/Carousel';
 import Section from '../../components/Section';
-import { getHomeSections } from '../../services/homeSections';
 
 function Home() {
-  const [homeSections, setHomeSections] = useState([]);
+  const sections = useSelector((state) => state.home.sections);
+  const loading = useSelector((state) => state.home.loading);
+  const dispatch = useDispatch();
   
   useEffect(()=>{
-    setHomeSections(getHomeSections());
-  },[]);
+      dispatch(fetchSections());
+  },[dispatch]);
 
   return (
       <Styled.HomeContainer>
         <Carousel/>
         <Styled.HomeSections>
-        {homeSections.map((element, index)=>(        
+        {sections.map((element, index)=>(        
             <Section section={element} key={index}/>
         ))}
         </Styled.HomeSections>

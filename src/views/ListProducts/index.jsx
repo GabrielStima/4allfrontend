@@ -1,47 +1,45 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchProducts, fetchFilterProducts } from '../../redux'
+
 import { Styled } from './styles';
-import {getListByCategory, getListFiltered} from '../../services/listProductsServices';
 import SectionItem from '../../components/SectionItem';
 import Filter from '../../components/Filter';
 import { Link, useLocation } from 'react-router-dom';
 
 function ListProducts({props}) {
   const { pathname } = useLocation();
-  const [category, setCategory] = useState({});
-  const [listProducts, setListProducts] = useState([]);
+  const products = useSelector((state) => state.listProducts.products);
+  const loading = useSelector((state) => state.listProducts.loading);
+  const dispatch = useDispatch();
 
   useEffect(()=>{
-    let result = {};
-    if(!!category.filters){
-      result = getListFiltered(category.filters, props.match.params.id, props.match.params.page)
+    dispatch(fetchProducts(props.match.params.id, props.match.params.page));
+},[dispatch, props]);
+  
+  useEffect(()=>{
+    if(!!products.filters){
+      dispatch(fetchFilterProducts(products.filters, props.match.params.id, props.match.params.page));
     }else{
-      result = getListByCategory(props.match.params.id, props.match.params.page)
+      dispatch(fetchProducts(props.match.params.id, props.match.params.page));
     }
-
-    setCategory(result);
-  }, [props]);
-
-  useEffect(()=>{
-    setListProducts(category.items)
-  }, [category])
+  }, [props, dispatch, products.filters]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   const handleListFiltered = (filter) => {
-    let result = {};
     if(filter !== "0"){
-      result = getListFiltered(filter, props.match.params.id, props.match.params.page)
+      dispatch(fetchFilterProducts(filter, props.match.params.id, props.match.params.page));
     }else{
-      result = getListByCategory(props.match.params.id, props.match.params.page)
+      dispatch(fetchProducts());
     }
     props.history.push(`/ListProducts/${props.match.params.id}/1`);
-    setCategory(result);
   }
 
   const pagination = () => {
-    let numberOfPages = category.pages; 
+    let numberOfPages = products.pages; 
     let arrayOfPages = [];
 
     for (let index = numberOfPages; index > 0; index--) {
@@ -58,14 +56,13 @@ function ListProducts({props}) {
       </Styled.ListProductFilter>
       <div>
         <div className="listProductGridInfoContainer">
-          <Styled.ListProductGridTitle>{category.title}</Styled.ListProductGridTitle>
+          <Styled.ListProductGridTitle>{products.title}</Styled.ListProductGridTitle>
           <Styled.ListProductGridDivider/>
         </div>
 
         <Styled.ListProductGrid>
         {
-          !!listProducts && 
-            listProducts.map((element, index) => (
+          products.items.map((element, index) => (
               <SectionItem key={index} item={element}/>
             ))
         }
