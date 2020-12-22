@@ -5,6 +5,12 @@ export const getListByCategory = (id, page = 1) => {
     result.pages = Math.ceil(result.items.length/12);
     const finalIndex = (page * 12);
     const initialIndex = finalIndex - 12;
+
+    result.items = result.items
+        .map((a) => ({sort: Math.random(), value: a}))
+        .sort((a, b) => a.sort - b.sort)
+        .map((a) => a.value)
+      
     result.items = result.items.slice(initialIndex, finalIndex);
 
     return result;

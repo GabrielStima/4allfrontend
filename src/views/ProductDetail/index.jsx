@@ -11,7 +11,7 @@ function ProductDetail({props}) {
 
   return (
       <Styled.ProductDetailContainer>
-        <h1>{item?.name}</h1>
+        <h1>{item?.title}</h1>
         <hr/>
         <Styled.ProductDetailGrid>
           <Styled.ProductDetailImage/>

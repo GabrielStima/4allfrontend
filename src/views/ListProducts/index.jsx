@@ -36,6 +36,7 @@ function ListProducts({props}) {
     }else{
       result = getListByCategory(props.match.params.id, props.match.params.page)
     }
+    props.history.push(`/ListProducts/${props.match.params.id}/1`);
     setCategory(result);
   }
 
@@ -73,7 +74,7 @@ function ListProducts({props}) {
       <Styled.ListProductPaginationContainer>
         {
           pagination().map((element, index) => (
-              <Link to={`/ListProducts/${props.match.params.id}/${element}/${category.filters}`} key={index}>
+              <Link to={`/ListProducts/${props.match.params.id}/${element}`} key={index}>
                 <Styled.ListProductPaginationItem>
                   {element}
                 </Styled.ListProductPaginationItem>

@@ -5,10 +5,10 @@ import { Styled } from './styles';
 function SectionItem({item}) {
   return (
       <Styled.SectionItemContainer className="container">
-        <Link to={item.url}>
+        <Link to={`/ProductDetail/${item.id}`}>
             <Styled.SectionItemImg img={item.image}/>
             <Styled.SectionItemInfoContainer>
-                <Styled.SectionItemTitle>{item.name}</Styled.SectionItemTitle>
+                <Styled.SectionItemTitle>{item.title}</Styled.SectionItemTitle>
                 <Styled.SectionItemPriceContainer>
                     {
                         item.oldPrice && (
