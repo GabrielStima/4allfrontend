@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# 4all - Front-end test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project
 
-## Available Scripts
+This project will be a clothing store called **STI Store**, which will be based on some existing stores.
+The inspirations for this project are:
 
-In the project directory, you can run:
+- [Kanui](https://www.kanui.com.br/);
+- [Lacoste](https://www.lacoste.com/br/);
+- [Renner](https://www.lojasrenner.com.br/);
+- [Netshoes](https://www.netshoes.com.br/);
+  The premise of the store would be something aimed at a younger audience with affordable clothes and a lot of sales based on promotions, as for example in [Kanui](https://www.kanui.com.br/), but with a more _clean_ visual footprint, like e-commerce from [Lacoste](https://www.lacoste.com/br/).
 
-### `yarn start`
+## UI
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For this project, a _Low Fidelity_ UI was created, with the thought of having a north for the programming to follow, below the images:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![VisualMap UI](https://github.com/GabrielStima/4allfrontend/blob/development/src/assets/Design/Group8.png);
 
-### `yarn test`
+and in relation to the final visual concept of e-commerce, I will be based on another project of my own, which is also called **STI Store**, that so far is in UI development, [Link para o projeto em desenvolvimento.](https://github.com/GabrielStima/stistore), and because of that I will use the same color system:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![System color](https://github.com/GabrielStima/4allfrontend/blob/development/src/assets/Design/ColorAndFonts.png).
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Development
