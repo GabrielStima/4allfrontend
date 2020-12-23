@@ -15,10 +15,10 @@ The inspirations for this project are:
 
 For this project, a _Low Fidelity_ UI was created, with the thought of having a north for the programming to follow, below the images:
 
-![VisualMap UI](https://github.com/GabrielStima/4allfrontend/blob/development/src/assets/Design/Group8.png);
+![VisualMap UI](https://github.com/GabrielStima/4allfrontend/blob/master/src/assets/Design/Group8.png);
 
 and in relation to the final visual concept of e-commerce, I will be based on another project of my own, which is also called **STI Store**, that so far is in UI development, [Link para o projeto em desenvolvimento.](https://github.com/GabrielStima/stistore), and because of that I will use the same color system:
 
-![System color](https://github.com/GabrielStima/4allfrontend/blob/development/src/assets/Design/ColorAndFonts.png).
+![System color](https://github.com/GabrielStima/4allfrontend/blob/master/src/assets/Design/ColorAndFonts.png).
 
 ## Development
