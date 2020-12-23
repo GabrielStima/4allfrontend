@@ -5,11 +5,12 @@ import { fetchProductById, addProductInTheBag } from '../../redux'
 import { Styled } from './styles';
 import Section from '../../components/Section';
 import ModalComponent from '../../components/Modal';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
 
 function ProductDetail({props}) {
   const { pathname } = useLocation();
   const [open, setOpen] = useState(false);
+  let history = useHistory();
 
   const product = useSelector((state) => state.productDetail.product);
   const loading = useSelector((state) => state.productDetail.loading);
@@ -29,7 +30,18 @@ function ProductDetail({props}) {
 
   return (
       <Styled.ProductDetailContainer>
-        <ModalComponent isOpen={open} toggleModal={toggleModal}/>
+        <ModalComponent isOpen={open} toggleModal={toggleModal} title={"Produto adicionado na sacola"} text={"Gostaria de continuar comprando?"} withOption={[
+          {
+            buttonColor: "#173957",
+            onClick: () => history.push("/"),
+            text: "Continuar comprando"
+          },
+          {
+            buttonColor: "#505050",
+            onClick: () => history.push("/bag"),
+            text: "Ir pra sacola"
+          },
+        ]}/>
         <hr/>
         <Styled.ProductDetailGrid>
           <Styled.ProductDetailImage image={product.item.image}/>
@@ -37,7 +49,11 @@ function ProductDetail({props}) {
           <h1>{product.item.title}</h1>
             <Styled.ProductDetailDescription>{product.item.description}</Styled.ProductDetailDescription>
             <Styled.ProductDetailSizes>
-              {product.item.size.map((element, index) => <Styled.ProductDetailSizeItems key={index}>{element}</Styled.ProductDetailSizeItems>)}
+              {product.item.size.map((element, index) => (
+                <Styled.ProductDetailSizeItemContainer>
+                  <Styled.ProductDetailSizeItems key={index}>{element}</Styled.ProductDetailSizeItems>
+                </Styled.ProductDetailSizeItemContainer>
+              ))}
             </Styled.ProductDetailSizes>
             <Styled.ProductDetailOldPrice>
               {!!product.item.oldPrice && `R$ ${product.item.oldPrice}`}

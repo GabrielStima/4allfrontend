@@ -1,12 +1,9 @@
 import React from "react";
 import Modal from "@material-ui/core/Modal";
 import { Styled } from './styles';
-import { useHistory  } from "react-router-dom";
 import { FiX } from 'react-icons/fi';
 
-function ModalComponent({isOpen, toggleModal}) {
-    let history = useHistory();
-
+function ModalComponent({isOpen, toggleModal, title, text, withOption}) {
     const body = (
     <Styled.ModalContainer>
         <Styled.Modal>
@@ -15,11 +12,14 @@ function ModalComponent({isOpen, toggleModal}) {
                     <FiX/>
                 </Styled.ModalCloseIcon>
             </Styled.ModalClose>
-            <Styled.ModalTitle>Text in a modal</Styled.ModalTitle>
-            <Styled.ModalDescription>Gostaria de ir para a sacola?</Styled.ModalDescription>
+            <Styled.ModalTitle>{title}</Styled.ModalTitle>
+            <Styled.ModalDescription>{text}</Styled.ModalDescription>
             <Styled.ModalButtonContainer>
-                <Styled.ModalButton buttonColor="#173957" onClick={() => history.push("/")}>Continuar comprando</Styled.ModalButton>
-                <Styled.ModalButton buttonColor="#505050" onClick={() => history.push("/bag")}>Ir para a sacola</Styled.ModalButton>
+                {
+                    withOption.map((element, index) => (
+                        <Styled.ModalButton key={index} buttonColor={element.buttonColor} onClick={element.onClick}>{element.text}</Styled.ModalButton>        
+                    ))
+                }
             </Styled.ModalButtonContainer>
         </Styled.Modal>
     </Styled.ModalContainer>

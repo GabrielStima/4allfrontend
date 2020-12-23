@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { removeProductInTheBag } from '../../redux'
-
+import { removeProductInTheBag, finalizePurchase } from '../../redux';
+import ModalComponent from '../../components/Modal';
 import emptyCart from "../../assets/img/emptyCart.svg";
 import { FiX } from "react-icons/fi";
 import { useHistory } from "react-router-dom";
@@ -10,15 +10,26 @@ import { Styled } from "./styles";
 function Bag({ props }) {
   const products = useSelector((state) => state.bag.products);
   const amount = useSelector((state) => state.bag.amount);
+  const [open, setOpen] = useState(false);
+  const dispatch = useDispatch();
+  let history = useHistory();
   const totalDiscountAmount = useSelector(
     (state) => state.bag.totalDiscountAmount
   );
 
-  const dispatch = useDispatch();
-  let history = useHistory();
+  const toggleModal = () => {
+    setOpen(!open);
+  }
 
   return (
     <>
+    <ModalComponent isOpen={open} toggleModal={toggleModal} title={"Compra finalizada com sucesso"} text={"Parabens pela compra"} withOption={[
+          {
+            buttonColor: "#173957",
+            onClick: () => history.push("/"),
+            text: "Continuar comprando"
+          },
+        ]}/>
       {products.length === 0 ? (
         <Styled.BagContainer>
           <h1>Não encontramos nenhum item porque não voltamos as compras?</h1>
@@ -75,6 +86,10 @@ function Bag({ props }) {
                     Total: <span>R$ {amount}</span>
                   </Styled.BagResumeTotalValue>
                 </Styled.BagResume>
+                <Styled.BagPurchaseButton onClick={() => {
+                  toggleModal();
+                  dispatch(finalizePurchase());
+                }}>Finalizar compra</Styled.BagPurchaseButton>
               </Styled.BagResumeContainer>
             </Styled.BagGrid>
           </Styled.BagContainerWithProducts>

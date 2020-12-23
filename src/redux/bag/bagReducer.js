@@ -3,7 +3,6 @@ import {
   REMOVE_PRODUCT,
   ADD_QUANTITY,
   DECREASE_QUANTITY,
-  CANCEL_PURCHASE,
   FINALIZE_PURCHASE,
 } from "./bagTypes";
 
@@ -82,14 +81,6 @@ export const bagReducer = (state = initialState, action) => {
       return {
         ...state,
         products: action.payload.products,
-      };
-    case CANCEL_PURCHASE:
-      return {
-        ...state,
-        products: initialState.products,
-        totalProducts: initialState.totalProducts,
-        amount: initialState.amount,
-        totalDiscountAmount: initialState.totalDiscountAmount,
       };
     case FINALIZE_PURCHASE:
       return {
