@@ -23,6 +23,7 @@ function Container(props) {
         }, 60000)
       );
     }
+    // eslint-disable-next-line
   }, [totalProducts]);
 
   return (
