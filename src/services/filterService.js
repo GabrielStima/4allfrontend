@@ -1,4 +1,4 @@
-import { clothesCategories } from '../assets/json/clothesCategories';
+import { clothesCategories } from "../assets/json/clothesCategories";
 export const getClothesFilters = () => {
-    return clothesCategories;
-}
+  return clothesCategories;
+};

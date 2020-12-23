@@ -1,10 +1,13 @@
-import { getListByCategory, getListFiltered } from '../../services/listProductsService';
+import {
+  getListByCategory,
+  getListFiltered,
+} from "../../services/listProductsService";
 
 import {
   FETCH_PRODUCTS_REQUEST,
   FETCH_PRODUCTS_REQUEST_SUCCESS,
   FETCH_PRODUCTS_REQUEST_FAIL,
-} from './listProductsTypes';
+} from "./listProductsTypes";
 
 export const fetchProductsRequest = () => {
   return {
@@ -33,14 +36,12 @@ export const fetchProducts = (idCategory, page) => {
     try {
       const result = getListByCategory(idCategory, page);
 
-      if(result.length === 0)
-          throw "Erro no serviço"
+      if (result.length === 0) throw "Erro no serviço";
 
       dispatch(fetchProductsRequestSuccess(result));
-
     } catch (error) {
-        console.error(error);
-        dispatch(fetchProductsRequestFail(error));
+      console.error(error);
+      dispatch(fetchProductsRequestFail(error));
     }
   };
 };
@@ -52,14 +53,12 @@ export const fetchFilterProducts = (filter, idCategory, page) => {
     try {
       const result = getListFiltered(filter, idCategory, page);
 
-      if(result.length === 0)
-          throw "Erro no serviço"
+      if (result.length === 0) throw "Erro no serviço";
 
       dispatch(fetchProductsRequestSuccess(result));
-
     } catch (error) {
-        console.error(error);
-        dispatch(fetchProductsRequestFail(error));
+      console.error(error);
+      dispatch(fetchProductsRequestFail(error));
     }
   };
 };

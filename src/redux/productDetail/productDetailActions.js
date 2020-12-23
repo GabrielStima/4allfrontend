@@ -1,10 +1,10 @@
-import { getProductById } from '../../services/productDetailService';
+import { getProductById } from "../../services/productDetailService";
 
 import {
   FETCH_PRODUCT_REQUEST,
   FETCH_PRODUCT_REQUEST_SUCCESS,
   FETCH_PRODUCT_REQUEST_FAIL,
-} from './productDetailTypes';
+} from "./productDetailTypes";
 
 export const fetchProductRequest = () => {
   return {
@@ -33,15 +33,12 @@ export const fetchProductById = (id) => {
     try {
       const result = getProductById(id);
 
-      if(result.length === 0)
-          throw "Erro no serviço"
+      if (result.length === 0) throw "Erro no serviço";
 
       dispatch(fetchProductRequestSuccess(result));
-
     } catch (error) {
-        console.error(error);
-        dispatch(fetchProductRequestFail(error));
+      console.error(error);
+      dispatch(fetchProductRequestFail(error));
     }
   };
 };
-

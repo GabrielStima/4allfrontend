@@ -1,5 +1,5 @@
-import { homeSections } from '../assets/json/homeSections';
+import { homeSections } from "../assets/json/homeSections";
 
 export const getHomeSections = () => {
-    return homeSections;
-}
+  return homeSections;
+};

@@ -58,6 +58,9 @@ export const Styled = {
     color: #ffffff;
     font-weight: 300;
     background-color: ${(props) => props.buttonColor};
+    align-items: center;
+    justify-content: center;
+    display: flex;
     &:hover {
       background-color: #989898;
     }
