@@ -68,6 +68,8 @@ export const Styled = {
     margin: 0 0.5rem;
     border-radius: 5px;
     cursor: pointer;
+    color: ${(props) => (props.selected ? "#ffffff" : "initial")};
+    background-color: ${(props) => (props.selected ? "#919191" : "initial")};
     &:hover {
       color: white;
       background-color: #919191;
