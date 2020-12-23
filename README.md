@@ -23,7 +23,10 @@ and in relation to the final visual concept of e-commerce, I will be based on an
 
 ## Development
 
-For this project I created this store with react and redux, using a fictitius services layer.
+For this project a framework was created to guide the development if you want to acess [click here](https://github.com/GabrielStima/4allfrontend/projects/1), or go to a project tab in the repository and
+click on 4allfrontend.
+
+In this project I created this store with react and redux, using a fictitius services layer.
 The data structure that services returns is as folloes:
 
 ### Home sections
