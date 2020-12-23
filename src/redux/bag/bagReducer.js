@@ -4,6 +4,7 @@ import {
   ADD_QUANTITY,
   DECREASE_QUANTITY,
   FINALIZE_PURCHASE,
+  CANCEL_PURCHASE,
 } from "./bagTypes";
 
 export const initialState = {
@@ -16,6 +17,12 @@ export const initialState = {
 export const bagReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_PRODUCT:
+      const addTimer = () => {
+        if (state.products.length === 0) {
+          window.localStorage.setItem("timer", new Date());
+        }
+      };
+      addTimer();
       const totalDiscountAmountResultAddProduct = (payload) => {
         let totalDiscountAmount = 0;
         const price = Number(payload.price).toFixed(2);
@@ -83,6 +90,14 @@ export const bagReducer = (state = initialState, action) => {
         products: action.payload.products,
       };
     case FINALIZE_PURCHASE:
+      return {
+        ...state,
+        products: initialState.products,
+        totalProducts: initialState.totalProducts,
+        amount: initialState.amount,
+        totalDiscountAmount: initialState.totalDiscountAmount,
+      };
+    case CANCEL_PURCHASE:
       return {
         ...state,
         products: initialState.products,

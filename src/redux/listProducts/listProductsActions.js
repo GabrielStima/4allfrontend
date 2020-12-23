@@ -36,7 +36,7 @@ export const fetchProducts = (idCategory, page) => {
     try {
       const result = getListByCategory(idCategory, page);
 
-      if (result.length === 0) throw "Erro no serviço";
+      if (result.length === 0) throw new Error("Erro no serviço");
 
       dispatch(fetchProductsRequestSuccess(result));
     } catch (error) {
@@ -53,7 +53,7 @@ export const fetchFilterProducts = (filter, idCategory, page) => {
     try {
       const result = getListFiltered(filter, idCategory, page);
 
-      if (result.length === 0) throw "Erro no serviço";
+      if (result.length === 0) throw new Error("Erro no serviço");
 
       dispatch(fetchProductsRequestSuccess(result));
     } catch (error) {

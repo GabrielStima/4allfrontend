@@ -94,6 +94,6 @@ export const Styled = {
     justify-content: center;
     position: absolute;
     top: 10px;
-    right: 62px;
+    right: 5%;
   `,
 };

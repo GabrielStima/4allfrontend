@@ -26,6 +26,21 @@ and in relation to the final visual concept of e-commerce, I will be based on an
 For this project a framework was created to guide the development if you want to acess [click here](https://github.com/GabrielStima/4allfrontend/projects/1), or go to a project tab in the repository and
 click on 4allfrontend.
 
+### Scripts
+
+`npm start` : Run application;
+`npm run build`: Run build;
+
+### Build
+
+The build is working however it is not optimized with lazy loader.
+
+### Responsiveness
+
+Regarding responsive, it was built up to 768px, so following the Google DevTools the resolutions covered were 4k(2560px), Laptop L(1440px), Laptop(1024px), Tablet(768px).
+
+### Service layer
+
 In this project I created this store with react and redux, using a fictitius services layer.
 The data structure that services returns is as folloes:
 
@@ -48,3 +63,9 @@ The data structure that services returns is as folloes:
 ### Products
 
 ` [{ id: 1, idCategory: 1, title: "Lorem Ipsum", oldPrice: "12.00", price: "10.00", size: ["PP", "P", "M", "G", "GG"], description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu est at elit efficitur cursus vel sit amet eros. Sed efficitur placerat arcu, vitae pellentesque erat tincidunt at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus eu nibh mattis, molestie dui eget, elementum urna. Nulla a velit pellentesque, molestie tellus varius, pretium ipsum. Donec interdum massa sed leo dictum, in efficitur enim sagittis. Fusce a sodales dolor. Pellentesque ornare tellus lorem, sed egestas diam viverra ut.", image: shirt }]`
+
+## Tests
+
+Regarding tests within this project, I didn't have enough time to apply the tests I would like.
+The idea would be to create integration tests, in simulated services, unit tests and component snapshots.
+If you want to see a project with some tests you can see this [repository](https://github.com/GabrielStima/personalblogchallenge) however I have another project with more advanced tests and with reports of coverage but this I cannot leave public but if you need I can release it to an email.

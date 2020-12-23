@@ -10,7 +10,6 @@ import { Link, useLocation } from "react-router-dom";
 function ListProducts({ props }) {
   const { pathname } = useLocation();
   const products = useSelector((state) => state.listProducts.products);
-  const loading = useSelector((state) => state.listProducts.loading);
   const dispatch = useDispatch();
 
   useEffect(() => {

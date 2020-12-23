@@ -33,7 +33,7 @@ export const fetchProductById = (id) => {
     try {
       const result = getProductById(id);
 
-      if (result.length === 0) throw "Erro no serviço";
+      if (result.length === 0) throw new Error("Erro no serviço");
 
       dispatch(fetchProductRequestSuccess(result));
     } catch (error) {

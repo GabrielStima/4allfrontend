@@ -4,6 +4,7 @@ import {
   ADD_QUANTITY,
   DECREASE_QUANTITY,
   FINALIZE_PURCHASE,
+  CANCEL_PURCHASE,
 } from "./bagTypes";
 
 export const addProductInTheBag = (object) => {
@@ -33,5 +34,10 @@ export const decreaseProductQuantity = (object) => {
 export const finalizePurchase = () => {
   return {
     type: FINALIZE_PURCHASE,
+  };
+};
+export const cancelPurchase = () => {
+  return {
+    type: CANCEL_PURCHASE,
   };
 };

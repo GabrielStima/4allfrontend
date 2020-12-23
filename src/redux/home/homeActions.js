@@ -33,12 +33,12 @@ export const fetchSections = () => {
     try {
       const result = getHomeSections();
 
-      if (result.length === 0) throw "Erro no serviço";
+      if (result.length === 0) throw new Error("Erro no serviço");
 
       dispatch(fetchHomeRequestSuccess(result));
     } catch (error) {
       console.error(error);
-      dispatch(fetchHomeRequestFail(error));
+      dispatch(fetchHomeRequestFail(error.message));
     }
   };
 };
