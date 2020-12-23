@@ -13,21 +13,18 @@ import {
       payload: object,
     };
   };
-  
   export const removeProductInTheBag = (object) => {
     return {
       type: REMOVE_PRODUCT,
       payload: object,
     };
   };
-  
   export const addProductQuantity = (object) => {
     return {
       type: ADD_QUANTITY,
       payload: object,
     };
   };
-  
   export const decreaseProductQuantity = (object) => {
     return {
       type: DECREASE_QUANTITY,

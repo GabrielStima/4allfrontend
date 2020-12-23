@@ -72,4 +72,19 @@ export const Styled = {
             text-decoration: none;
         }
     `,
+    HeaderBadge:styled.span`
+        box-sizing: border-box;
+        padding: .1rem;
+        width: 16px;
+        font-size: .6rem;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        right: 62px;
+    `,
 }

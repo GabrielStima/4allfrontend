@@ -1,6 +1,6 @@
 import React,{ useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchProductById } from '../../redux'
+import { fetchProductById, addProductInTheBag } from '../../redux'
 
 import { Styled } from './styles';
 import Section from '../../components/Section';
@@ -44,7 +44,10 @@ function ProductDetail({props}) {
             </Styled.ProductDetailOldPrice>
             <Styled.ProductDetailPrice>R$ {product.item.price}</Styled.ProductDetailPrice>
             <Styled.ProductDetailButtonContainer>
-              <Styled.ProductDetailButton onClick={toggleModal}>Adicionar na sacola</Styled.ProductDetailButton>
+              <Styled.ProductDetailButton onClick={() => {
+                toggleModal();
+                dispatch(addProductInTheBag(product.item));
+              }}>Adicionar na sacola</Styled.ProductDetailButton>
             </Styled.ProductDetailButtonContainer>
           </Styled.ProductDetailInfo>
           <Styled.ProductDetailRelatedItems>
