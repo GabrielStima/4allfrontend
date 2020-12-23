@@ -22,43 +22,56 @@ export const bagReducer = (state = initialState, action) => {
         const price = Number(payload.price).toFixed(2);
         const oldPrice = Number(payload.oldPrice).toFixed(2);
 
-        if(oldPrice !== "0.00"){
-          totalDiscountAmount =  oldPrice - price;
+        if (oldPrice !== "0.00") {
+          totalDiscountAmount = oldPrice - price;
         }
 
-        totalDiscountAmount = (Number(state.totalDiscountAmount) + totalDiscountAmount).toFixed(2);
+        totalDiscountAmount = (
+          Number(state.totalDiscountAmount) + totalDiscountAmount
+        ).toFixed(2);
         return totalDiscountAmount;
       };
 
       return {
         ...state,
-      products: [...state.products, action.payload],
-      totalProducts: state.totalProducts + 1,
-      amount: (Number(state.amount) + Number(action.payload.price)).toFixed(2),
-      totalDiscountAmount: totalDiscountAmountResultAddProduct(action.payload),
+        products: [...state.products, action.payload],
+        totalProducts: state.totalProducts + 1,
+        amount: (Number(state.amount) + Number(action.payload.price)).toFixed(
+          2
+        ),
+        totalDiscountAmount: totalDiscountAmountResultAddProduct(
+          action.payload
+        ),
       };
     case REMOVE_PRODUCT:
       const totalDiscountAmountResultRemoveProduct = (payload) => {
-        let totalDiscountAmount = payload.totalDiscountAmount;
+        let totalDiscountAmount = Number(payload.totalDiscountAmount);
 
-        const price = Number(payload.price).toFixed(2);
+        const price = Number(payload.product.price).toFixed(2);
         const oldPrice = Number(payload.product.oldPrice).toFixed(2);
 
-        if(oldPrice !== "0.00"){
-          let result =  oldPrice - price;
+        if (oldPrice !== "0.00") {
+          let result = oldPrice - price;
           totalDiscountAmount -= result;
         }
 
-        totalDiscountAmount = (Number(state.totalDiscountAmount) - totalDiscountAmount).toFixed(2);
+        totalDiscountAmount = totalDiscountAmount.toFixed(2);
+
         return totalDiscountAmount;
       };
 
       return {
         ...state,
-      products: state.products.filter(element => action.payload.product.id !== element.id),
-      totalProducts: state.totalProducts - 1,
-      amount: (Number(state.amount) - Number(action.payload.product.price)).toFixed(2),
-      totalDiscountAmount: totalDiscountAmountResultRemoveProduct(action.payload),
+        products: state.products.filter(
+          (element) => action.payload.product.id !== element.id
+        ),
+        totalProducts: state.totalProducts - 1,
+        amount: (
+          Number(state.amount) - Number(action.payload.product.price)
+        ).toFixed(2),
+        totalDiscountAmount: totalDiscountAmountResultRemoveProduct(
+          action.payload
+        ),
       };
     case ADD_QUANTITY:
       return {
